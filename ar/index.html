@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARK — 自动科研套件</title>
-  <meta name="description" content="把重复劳动交给系统，把研究方向掌握在你手里。ARK 通过多个专业 AI Agent 协同完成实验、写作与迭代。">
-  <meta property="og:title" content="ARK — 自动科研套件">
-  <meta property="og:description" content="活儿交出去，方向握手里。">
+  <title>ARK — حزمة البحث التلقائي</title>
+  <meta name="description" content="أفرغ العمل المتكرر. وجّه البحث. ARK إطار بحثي — 8 وكلاء AI يتولّون التجارب والكتابة والتكرار بينما تقود الاتجاه.">
+  <meta property="og:title" content="ARK — حزمة البحث التلقائي">
+  <meta property="og:description" content="أفرغ العمل المتكرر. وجّه البحث.">
   <meta property="og:image" content="https://kaust-ark.github.io/assets/social-preview.png">
-  <meta property="og:url" content="https://kaust-ark.github.io/zh/">
+  <meta property="og:url" content="https://kaust-ark.github.io/ar/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../assets/logo_ark_transparent.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body { font-family: 'Cairo', 'Inter', sans-serif; }
+    .nav-brand, .gradient-text, .hero-accent, h1, h2, h3,
+    .section-label, .section-title, .section-subtitle,
+    .ark-intro-text, p, li, a, span, .btn,
+    .comparison-col-header, .agent-info h3, .agent-info p,
+    .pillar-card h3, .pillar-card p, .paper-card-body h3,
+    .paper-meta, .loop-inline-step, .phase-card h3, .phase-card p,
+    .team-content p, .footer-note { font-family: 'Cairo', 'Inter', sans-serif; }
+    .nav-links { gap: .25rem; }
+    .lang-toggle { font-size: .85rem; }
+    .comparison-split { direction: rtl; }
+    .loop-steps-inline { flex-wrap: wrap; }
+    .footer { direction: rtl; }
+    .footer-links { flex-wrap: wrap; }
+  </style>
 </head>
 <body>
 
@@ -27,20 +43,18 @@
   <div class="container">
     <a href="#" class="nav-brand">ARK</a>
     <div class="nav-links" id="navLinks">
-      <a href="#compare">为什么选择 ARK</a>
-      <a href="#papers">论文</a>
+      <a href="#compare">لماذا ARK</a>
+      <a href="#papers">الأوراق</a>
       <a href="#pipeline">Pipeline</a>
       <a href="#agents">Agents</a>
-      <a href="doc.html">文档</a>
-      <a href="about.html">关于</a>
       <a href="../index.html" class="lang-toggle" title="Switch to English">EN</a>
-      <a href="../ar/index.html" class="lang-toggle" title="التبديل إلى العربية">العربية</a>
+      <a href="../zh/index.html" class="lang-toggle" title="切换到中文">中文</a>
       <a href="https://github.com/kaust-ark/ARK" target="_blank" rel="noopener" class="gh-link">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.38c.6.11.82-.26.82-.58v-2.16c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 00-1.33-1.76c-1.09-.74.08-.73.08-.73a2.52 2.52 0 011.84 1.24 2.56 2.56 0 003.5 1 2.56 2.56 0 01.76-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 011.24-3.22 4.3 4.3 0 01.12-3.18s1-.33 3.3 1.23a11.4 11.4 0 016 0c2.3-1.56 3.3-1.23 3.3-1.23a4.3 4.3 0 01.12 3.18 4.64 4.64 0 011.24 3.22c0 4.61-2.81 5.63-5.48 5.93a2.86 2.86 0 01.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0012 .3"/></svg>
         GitHub
       </a>
     </div>
-    <button class="hamburger" id="hamburger" aria-label="Menu">
+    <button class="hamburger" id="hamburger" aria-label="القائمة">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -54,12 +68,12 @@
     <div class="hero-content">
       <img src="../assets/logo_ark_transparent.png" alt="ARK" class="hero-logo">
       <h1 class="gradient-text">Automatic Research Kit</h1>
-      <p class="hero-accent">Idea to Paper. You Lead, ARK Executes.</p>
+      <p class="hero-accent">من الفكرة إلى الورقة. أنت تقود، ARK ينفّذ.</p>
       <div class="hero-cta">
         <div class="hero-cta-row">
           <a href="http://mcmgt01:8425" target="_blank" rel="noopener" class="btn btn-primary">
-            🚀 Launch ARK
-            <span style="display:block;font-size:.7em;font-weight:400;opacity:.8;margin-top:2px">ROCS VPN required</span>
+            🚀 إطلاق مشروع
+            <span style="display:block;font-size:.7em;font-weight:400;opacity:.8;margin-top:2px">يتطلب ROCS VPN</span>
           </a>
         </div>
       </div>
@@ -71,8 +85,8 @@
 <section id="intro">
   <div class="container">
     <div class="ark-intro reveal">
-      <p class="section-label">ARK 是什么</p>
-      <p class="ark-intro-text">ARK 是一个自动化科研辅助框架，将你的想法转化为可投稿的论文。它会分析你的研究想法、深度调研文献、提交 Slurm 实验任务、生成出版级图表、撰写 LaTeX 全文，并持续迭代审稿与改进——你随时可通过网页或 Telegram 掌握全局、实时干预。</p>
+      <p class="section-label">ما هو ARK</p>
+      <p class="ark-intro-text">ARK إطار بحثي آلي يحوّل فكرتك إلى ورقة علمية جاهزة للنشر. يحلّل فكرتك، ويُجري بحثاً أدبياً عميقاً، ويُشغّل تجارب Slurm، ويُنشئ أشكالاً بجودة نشر، ويكتب LaTeX، ويراجع الورقة ويُحسّنها باستمرار — بينما تبقى في السيطرة الكاملة في كل خطوة عبر الويب أو Telegram.</p>
     </div>
   </div>
 </section>
@@ -81,26 +95,26 @@
 <section id="compare">
   <div class="container">
     <div style="text-align:center">
-      <p class="section-label reveal">为什么选择 ARK</p>
-      <h2 class="section-title reveal">把劳动交出去，把方向握手里。</h2>
-      <p class="section-subtitle reveal">现有工具试图端到端自动化整个科研过程。ARK 自动化的是重复劳动，让你始终掌控研究方向。</p>
+      <p class="section-label reveal">لماذا ARK</p>
+      <h2 class="section-title reveal">أفرغ العمل المتكرر. وجّه البحث.</h2>
+      <p class="section-subtitle reveal">تحاول الأدوات الأخرى أتمتة البحث بالكامل. ARK يؤتمت العمل المتكرر ويُبقيك في قيادة الاتجاه.</p>
     </div>
 
     <div class="comparison-split reveal">
       <div class="comparison-col comparison-col--other">
-        <div class="comparison-col-header">其他工具</div>
+        <div class="comparison-col-header">الأدوات الأخرى</div>
         <ul>
-          <li>&#10060; 黑箱执行</li>
-          <li>&#10060; 偏离用户意图</li>
-          <li>&#10060; 一旦启动无法干预</li>
+          <li>&#10060; تنفيذ في صندوق أسود</li>
+          <li>&#10060; الانحراف عن نية المستخدم</li>
+          <li>&#10060; لا يمكن التدخل بعد البدء</li>
         </ul>
       </div>
       <div class="comparison-col comparison-col--ark">
         <div class="comparison-col-header">ARK</div>
         <ul>
-          <li>&#9989; 实时可观测</li>
-          <li>&#9989; 关键节点暂停，主动确认后再继续</li>
-          <li>&#9989; 随时通过网页或 Telegram 干预</li>
+          <li>&#9989; مراقبة فورية</li>
+          <li>&#9989; يتوقف عند المفترقات الحرجة ويسأل قبل المتابعة</li>
+          <li>&#9989; تدخّل المستخدم عبر الويب أو Telegram</li>
         </ul>
       </div>
     </div>
@@ -108,18 +122,18 @@
     <div class="contribution-cards">
       <div class="pillar-card reveal stagger-1">
         <div class="pillar-icon">&#128270;</div>
-        <h3>实时可观测</h3>
-        <p>每个 Agent 的动作、审稿评分与决策全部实时记录。你随时掌握运行状态，绝不是黑箱。</p>
+        <h3>مراقبة فورية</h3>
+        <p>كل إجراء لكل وكيل، درجات المراجعة، والقرارات مُسجَّلة فوراً. أنت تعرف دائماً أين يقف التشغيل — لا صناديق سوداء.</p>
       </div>
       <div class="pillar-card reveal stagger-2">
         <div class="pillar-icon">&#128276;</div>
-        <h3>关键节点提醒</h3>
-        <p>分数停滞、实验分支变化较大、计划存在歧义时，ARK 会暂停并主动确认，不会擅自做决定。</p>
+        <h3>تنبيهات القرارات</h3>
+        <p>عند المفترقات الحرجة — درجة متوقفة، فرع تجربة رئيسي، خطة غامضة — يتوقف ARK ويسأل قبل المتابعة. لا قرارات صامتة.</p>
       </div>
       <div class="pillar-card reveal stagger-3">
         <div class="pillar-icon">&#9784;</div>
-        <h3>随时干预</h3>
-        <p>通过 Telegram 或网页随时发送指令，ARK 在下一轮迭代自动吸收新方向，无需重启流程。</p>
+        <h3>تدخّل في أي وقت</h3>
+        <p>أرسل تعليمات جديدة في أي وقت عبر Telegram أو بوابة الويب. يدمج ARK توجيهك في التكرار التالي دون إعادة تشغيل.</p>
       </div>
     </div>
   </div>
@@ -129,33 +143,33 @@
 <section id="papers">
   <div class="container">
     <div style="text-align:center">
-      <p class="section-label reveal">实战成果</p>
-      <h2 class="section-title reveal">ARK 产出的真实论文</h2>
-      <p class="section-subtitle reveal">由 ARK 端到端生成的真实论文成果。</p>
+      <p class="section-label reveal">النتائج</p>
+      <h2 class="section-title reveal">أوراق علمية مثالية</h2>
+      <p class="section-subtitle reveal">أوراق علمية حقيقية أنتجها ARK من البداية إلى النهاية.</p>
     </div>
     <div class="papers-grid">
       <div class="paper-card reveal stagger-1" data-tilt>
         <a href="../assets/papers/gac.pdf" target="_blank" rel="noopener" class="paper-card-img">
-          <img src="../assets/paper-gac.png" alt="GAC 论文">
-          <span class="paper-badge">模板: EuroMLSys</span>
+          <img src="../assets/paper-gac.png" alt="ورقة GAC">
+          <span class="paper-badge">قالب: EuroMLSys</span>
         </a>
         <div class="paper-card-body">
           <h3>When Smaller Is Slower: Dimensional Collapse in Compressed LLMs</h3>
-          <p class="paper-meta">EuroMLSys 2026</p>
-          <a href="../assets/papers/gac.pdf" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem;padding:.5rem 1rem">阅读论文</a>
-          <a href="https://github.com/sands-lab/GAC" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.85rem;padding:.5rem 1rem">查看代码</a>
+          <p class="paper-meta">EuroMLSys 2026 (مقبول كمحاضرة شفهية)</p>
+          <a href="../assets/papers/gac.pdf" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem;padding:.5rem 1rem">اقرأ الورقة</a>
+          <a href="https://github.com/sands-lab/GAC" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.85rem;padding:.5rem 1rem">عرض الكود</a>
         </div>
       </div>
       <div class="paper-card reveal stagger-2" data-tilt>
         <a href="../assets/papers/mma.pdf" target="_blank" rel="noopener" class="paper-card-img">
-          <img src="../assets/paper-example.png" alt="MMA 论文">
-          <span class="paper-badge">模板: NeurIPS</span>
+          <img src="../assets/paper-example.png" alt="ورقة MMA">
+          <span class="paper-badge">قالب: NeurIPS</span>
         </a>
         <div class="paper-card-body">
           <h3>A Practical Guide to CPU Matrix Multiplication: From Naive to Efficient</h3>
-          <p class="paper-meta">NeurIPS 2025</p>
-          <a href="../assets/papers/mma.pdf" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem;padding:.5rem 1rem">阅读论文</a>
-          <a href="https://github.com/JihaoXin/mma" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.85rem;padding:.5rem 1rem">查看代码</a>
+          <p class="paper-meta">مشروع دراسي (قالب NeurIPS 2025)</p>
+          <a href="../assets/papers/mma.pdf" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem;padding:.5rem 1rem">اقرأ الورقة</a>
+          <a href="https://github.com/JihaoXin/mma" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.85rem;padding:.5rem 1rem">عرض الكود</a>
         </div>
       </div>
     </div>
@@ -165,8 +179,8 @@
 <!-- ===== Venues ===== -->
 <section class="venues" id="venues">
   <div class="container" style="text-align:center;margin-bottom:1.5rem">
-    <p class="section-label reveal">会议模板</p>
-    <h2 class="section-title reveal">支持的会议模板</h2>
+    <p class="section-label reveal">ذكاء المؤتمرات</p>
+    <h2 class="section-title reveal">المؤتمرات المدعومة</h2>
   </div>
   <div class="venues-scroll">
     <div class="venues-track" id="venuesTrack1">
@@ -207,25 +221,21 @@
   </div>
 </section>
 
-
 <!-- ===== Pipeline ===== -->
 <section id="pipeline">
   <div class="container">
     <div style="text-align:center">
-      <p class="section-label reveal">工作原理</p>
-      <h2 class="section-title reveal">三阶段，自动迭代到达标</h2>
-      <p class="section-subtitle reveal">研究 → 开发 → 审稿，持续迭代直至达到目标分数。</p>
+      <p class="section-label reveal">كيف يعمل</p>
+      <h2 class="section-title reveal">مسار ثلاثي المراحل</h2>
+      <p class="section-subtitle reveal">يتنقل ARK عبر البحث والتطوير والمراجعة حتى تستوفي الورقة معايير الجودة.</p>
     </div>
 
     <div class="pipeline-phases" id="pipelinePhases">
-      <!-- Phase 1 -->
       <div class="phase-card" data-phase="1">
         <div class="phase-number">1</div>
-        <h3>研究</h3>
-        <p>Deep Research 搜文献、理背景。</p>
+        <h3>مرحلة البحث</h3>
+        <p>يجمع البحث العميق المعرفة الخلفية ومسح الأدبيات.</p>
       </div>
-
-      <!-- Arrow 1→2 -->
       <div class="phase-connector" data-connector="1">
         <svg viewBox="0 0 60 24">
           <line class="arrow-line" x1="0" y1="12" x2="52" y2="12" />
@@ -233,15 +243,11 @@
           <circle class="arrow-dot" cx="0" cy="12" r="3"/>
         </svg>
       </div>
-
-      <!-- Phase 2 -->
       <div class="phase-card" data-phase="2">
         <div class="phase-number">2</div>
-        <h3>开发</h3>
-        <p>定方案、跑实验、分析结果、写初稿。</p>
+        <h3>مرحلة التطوير</h3>
+        <p>تخطيط التجارب، التشغيل على الحوسبة، تحليل النتائج، كتابة المسودة الأولى.</p>
       </div>
-
-      <!-- Arrow 2→3 -->
       <div class="phase-connector" data-connector="2">
         <svg viewBox="0 0 60 24">
           <line class="arrow-line" x1="0" y1="12" x2="52" y2="12" />
@@ -249,30 +255,28 @@
           <circle class="arrow-dot" cx="0" cy="12" r="3"/>
         </svg>
       </div>
-
-      <!-- Phase 3 -->
       <div class="phase-card" data-phase="3">
         <div class="phase-number">3</div>
-        <h3>审稿</h3>
-        <p>迭代优化，直到审稿分数达到阈值。</p>
+        <h3>مرحلة المراجعة</h3>
+        <p>حلقة تحسين تكرارية حتى تبلغ درجة المراجعة عتبة القبول.</p>
       </div>
     </div>
 
     <div class="review-loop" id="reviewLoop">
       <div class="review-loop-header reveal">
-        <p class="section-label" style="margin-bottom:.3rem">审稿循环</p>
-        <h3 class="review-loop-title">每轮迭代 5 步</h3>
+        <p class="section-label" style="margin-bottom:.3rem">دورة المراجعة</p>
+        <h3 class="review-loop-title">كل تكرار يشمل 5 خطوات</h3>
       </div>
       <div class="loop-steps-inline reveal">
-        <span class="loop-inline-step"><span class="loop-step-icon">📄</span> 编译</span>
+        <span class="loop-inline-step"><span class="loop-step-icon">📄</span> تجميع</span>
         <span class="loop-inline-arr">&rarr;</span>
-        <span class="loop-inline-step"><span class="loop-step-icon">🔍</span> 审稿</span>
+        <span class="loop-inline-step"><span class="loop-step-icon">🔍</span> مراجعة</span>
         <span class="loop-inline-arr">&rarr;</span>
-        <span class="loop-inline-step"><span class="loop-step-icon">📋</span> 规划</span>
+        <span class="loop-inline-step"><span class="loop-step-icon">📋</span> تخطيط</span>
         <span class="loop-inline-arr">&rarr;</span>
-        <span class="loop-inline-step"><span class="loop-step-icon">⚡</span> 执行</span>
+        <span class="loop-inline-step"><span class="loop-step-icon">⚡</span> تنفيذ</span>
         <span class="loop-inline-arr">&rarr;</span>
-        <span class="loop-inline-step"><span class="loop-step-icon">✅</span> 验证</span>
+        <span class="loop-inline-step"><span class="loop-step-icon">✅</span> تحقّق</span>
       </div>
     </div>
   </div>
@@ -282,58 +286,58 @@
 <section id="agents">
   <div class="container">
     <div style="text-align:center">
-      <p class="section-label reveal">认识团队</p>
-      <h2 class="section-title reveal">专业 AI Agent，各司其职</h2>
-      <p class="section-subtitle reveal">每个 Agent 精通一个领域，通过共享状态和结构化交接协作。</p>
+      <p class="section-label reveal">تعرّف على الفريق</p>
+      <h2 class="section-title reveal">وكلاء AI متخصصون</h2>
+      <p class="section-subtitle reveal">كل وكيل خبير في مجاله، يتعاونون من خلال حالة مشتركة وتسليمات منظمة.</p>
     </div>
     <div class="agents-grid">
       <div class="agent-card agent-reviewer reveal stagger-1">
         <div class="agent-icon">
           <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
         </div>
-        <div class="agent-info"><h3>Reviewer</h3><p>给论文打分，列出具体改进任务。</p></div>
+        <div class="agent-info"><h3>Reviewer</h3><p>يُقيّم الورقة ويُنشئ مهام تحسين قابلة للتنفيذ.</p></div>
       </div>
       <div class="agent-card agent-planner reveal stagger-2">
         <div class="agent-icon">
           <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
         </div>
-        <div class="agent-info"><h3>Planner</h3><p>把审稿意见转化成优先级行动计划。</p></div>
+        <div class="agent-info"><h3>Planner</h3><p>يحوّل ملاحظات المراجعة إلى خطة عمل ذات أولويات.</p></div>
       </div>
       <div class="agent-card agent-writer reveal stagger-3">
         <div class="agent-icon">
           <svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
         </div>
-        <div class="agent-info"><h3>Writer</h3><p>按计划起草和打磨 LaTeX 各章节。</p></div>
+        <div class="agent-info"><h3>Writer</h3><p>يصيغ أقسام LaTeX ويُنقّحها وفق مهام الخطة.</p></div>
       </div>
       <div class="agent-card agent-experimenter reveal stagger-4">
         <div class="agent-icon">
           <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
         </div>
-        <div class="agent-info"><h3>Experimenter</h3><p>在远程算力上跑实验、收结果。</p></div>
+        <div class="agent-info"><h3>Experimenter</h3><p>يُشغّل التجارب على الحوسبة عن بُعد ويجمع النتائج.</p></div>
       </div>
       <div class="agent-card agent-researcher reveal stagger-5">
         <div class="agent-icon">
           <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </div>
-        <div class="agent-info"><h3>Researcher</h3><p>查文献、找空白、搜证据。</p></div>
+        <div class="agent-info"><h3>Researcher</h3><p>يستعرض الأدبيات، يحدد الفجوات، ويجمع الأدلة.</p></div>
       </div>
       <div class="agent-card agent-visualizer reveal stagger-6">
         <div class="agent-icon">
           <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
         </div>
-        <div class="agent-info"><h3>Visualizer</h3><p>生成符合会议排版规范的出版级图表。</p></div>
+        <div class="agent-info"><h3>Visualizer</h3><p>يُنشئ أشكالاً بجودة نشر بأبعاد دقيقة للمؤتمر.</p></div>
       </div>
       <div class="agent-card agent-debugger reveal stagger-7">
         <div class="agent-icon">
           <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
         </div>
-        <div class="agent-info"><h3>Meta-debugger</h3><p>识别流程停滞、诊断故障，并触发自修复。</p></div>
+        <div class="agent-info"><h3>Meta-Debugger</h3><p>يكتشف التوقف، يشخّص الإخفاقات، ويُشغّل الإصلاح الذاتي.</p></div>
       </div>
       <div class="agent-card agent-coder reveal stagger-8">
         <div class="agent-icon">
           <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </div>
-        <div class="agent-info"><h3>Coder</h3><p>编写代码、修复 bug、维护实验脚本。</p></div>
+        <div class="agent-info"><h3>Coder</h3><p>يكتب كود التجارب ويُصحّح الأخطاء والسكريبتات.</p></div>
       </div>
     </div>
   </div>
@@ -343,12 +347,12 @@
 <section id="team">
   <div class="container">
     <div style="text-align:center">
-      <p class="section-label reveal">我们是谁</p>
-      <h2 class="section-title reveal">KAUST SANDS Lab 出品</h2>
+      <p class="section-label reveal">من نحن</p>
+      <h2 class="section-title reveal">مختبر SANDS، KAUST</h2>
     </div>
     <div class="team-content reveal">
-      <p>ARK 由 <strong style="color:var(--text-primary)">KAUST（阿卜杜拉国王科技大学）SANDS Lab</strong> 开发。</p>
-      <a href="https://sands.kaust.edu.sa/" target="_blank" rel="noopener" class="btn btn-outline">访问 SANDS Lab</a>
+      <p>ARK مطوَّر من قِبَل <strong style="color:var(--text-primary)">مختبر SANDS، جامعة الملك عبدالله للعلوم والتقنية (KAUST)، المملكة العربية السعودية</strong>.</p>
+      <a href="https://sands.kaust.edu.sa/" target="_blank" rel="noopener" class="btn btn-outline">زيارة مختبر SANDS</a>
     </div>
   </div>
 </section>
@@ -362,15 +366,15 @@
     </div>
     <div class="footer-links">
       <a href="https://github.com/kaust-ark/ARK" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://github.com/kaust-ark/ARK/blob/main/README.md" target="_blank" rel="noopener">文档</a>
-      <a href="https://github.com/kaust-ark/ARK/blob/main/LICENSE" target="_blank" rel="noopener">Apache 2.0 许可证</a>
+      <a href="https://github.com/kaust-ark/ARK/blob/main/README.md" target="_blank" rel="noopener">التوثيق</a>
+      <a href="https://github.com/kaust-ark/ARK/blob/main/LICENSE" target="_blank" rel="noopener">رخصة Apache 2.0</a>
     </div>
-    <p class="footer-note">使用 <a href="https://claude.ai/claude-code" target="_blank" rel="noopener">Claude Code</a> 构建</p>
+    <p class="footer-note">بُني باستخدام <a href="https://claude.ai/claude-code" target="_blank" rel="noopener">Claude Code</a></p>
   </div>
 </footer>
 
 <!-- Back to top -->
-<button class="back-to-top" id="backToTop" aria-label="回到顶部">
+<button class="back-to-top" id="backToTop" aria-label="العودة إلى الأعلى">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
     <polyline points="18 15 12 9 6 15"/>
   </svg>
