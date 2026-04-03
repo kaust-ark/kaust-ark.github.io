@@ -25,10 +25,7 @@
 <!-- ===== Navbar ===== -->
 <nav class="navbar" id="navbar">
   <div class="container">
-    <a href="#" class="nav-brand">
-      <img src="assets/logo_ark_transparent.png" alt="ARK logo">
-      ARK
-    </a>
+    <a href="#" class="nav-brand">ARK</a>
     <div class="nav-links" id="navLinks">
       <a href="#compare">Why ARK</a>
       <a href="#papers">Papers</a>
@@ -54,6 +51,7 @@
   <div class="hero-particles" id="heroParticles"></div>
   <div class="container">
     <div class="hero-content">
+      <img src="assets/logo_ark_transparent.png" alt="ARK" class="hero-logo">
       <h1 class="gradient-text">Automatic Research Kit</h1>
       <p class="hero-accent">Idea to Paper. You Lead, ARK Executes.</p>
       <div class="hero-cta">
@@ -122,6 +120,77 @@
         <h3>Anytime Intervention</h3>
         <p>Send a new instruction at any point via Telegram or the web portal. ARK incorporates your direction into the next iteration without restarting.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Papers ===== -->
+<section id="papers">
+  <div class="container">
+    <div style="text-align:center">
+      <p class="section-label reveal">Results</p>
+      <h2 class="section-title reveal">Example Papers</h2>
+      <p class="section-subtitle reveal">Real papers generated end-to-end by ARK.</p>
+    </div>
+    <div class="papers-grid">
+      <div class="paper-card reveal stagger-1" data-tilt>
+        <a href="assets/papers/gac.pdf" target="_blank" rel="noopener" class="paper-card-img">
+          <img src="assets/paper-gac.png" alt="GAC Paper">
+          <span class="paper-badge">Template: EuroMLSys</span>
+        </a>
+        <div class="paper-card-body">
+          <h3>When Smaller Is Slower: Dimensional Collapse in Compressed LLMs</h3>
+          <p class="paper-meta">EuroMLSys 2026 &middot; ARK-generated</p>
+          <a href="assets/papers/gac.pdf" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem;padding:.5rem 1rem">Read Paper</a>
+          <a href="https://github.com/sands-lab/GAC" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.85rem;padding:.5rem 1rem">View Code</a>
+        </div>
+      </div>
+      <div class="paper-card reveal stagger-2" data-tilt>
+        <a href="assets/papers/mma.pdf" target="_blank" rel="noopener" class="paper-card-img">
+          <img src="assets/paper-example.png" alt="MMA Paper">
+          <span class="paper-badge">Template: NeurIPS</span>
+        </a>
+        <div class="paper-card-body">
+          <h3>A Practical Guide to CPU Matrix Multiplication: From Naive to Efficient</h3>
+          <p class="paper-meta">NeurIPS 2025 &middot; 14 iterations &middot; human-steered</p>
+          <a href="assets/papers/mma.pdf" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem;padding:.5rem 1rem">Read Paper</a>
+          <a href="https://github.com/JihaoXin/mma" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.85rem;padding:.5rem 1rem">View Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Venues ===== -->
+<section class="venues" id="venues">
+  <div class="container" style="text-align:center;margin-bottom:1.5rem">
+    <p class="section-label reveal">Venue Intelligence</p>
+    <h2 class="section-title reveal">Supported Venues</h2>
+  </div>
+  <div class="venues-scroll">
+    <div class="venues-track" id="venuesTrack1">
+      <span class="venue-badge">NeurIPS</span>
+      <span class="venue-badge">ICML</span>
+      <span class="venue-badge">ICLR</span>
+      <span class="venue-badge">AAAI</span>
+      <span class="venue-badge">ACL</span>
+      <span class="venue-badge">IEEE</span>
+      <span class="venue-badge">ACM SIGPLAN</span>
+      <span class="venue-badge">LNCS</span>
+      <span class="venue-badge">USENIX</span>
+      <span class="venue-badge">CVPR</span>
+      <span class="venue-badge">ECCV</span>
+      <span class="venue-badge">NeurIPS</span>
+      <span class="venue-badge">ICML</span>
+      <span class="venue-badge">ICLR</span>
+      <span class="venue-badge">AAAI</span>
+      <span class="venue-badge">ACL</span>
+      <span class="venue-badge">IEEE</span>
+      <span class="venue-badge">ACM SIGPLAN</span>
+      <span class="venue-badge">LNCS</span>
+      <span class="venue-badge">USENIX</span>
+      <span class="venue-badge">CVPR</span>
+      <span class="venue-badge">ECCV</span>
     </div>
   </div>
 </section>
@@ -255,105 +324,6 @@
         </div>
         <div class="agent-info"><h3>Coder</h3><p>Writes and debugs experiment code, scripts, and tooling.</p></div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== Papers ===== -->
-<section id="papers">
-  <div class="container">
-    <div style="text-align:center">
-      <p class="section-label reveal">Results</p>
-      <h2 class="section-title reveal">Example Papers</h2>
-      <p class="section-subtitle reveal">Real papers generated end-to-end by ARK.</p>
-    </div>
-    <div class="papers-grid">
-      <div class="paper-card reveal stagger-1" data-tilt>
-        <a href="assets/papers/gac.pdf" target="_blank" rel="noopener" class="paper-card-img">
-          <img src="assets/paper-gac.png" alt="GAC Paper">
-          <span class="paper-badge">Template: EuroMLSys</span>
-        </a>
-        <div class="paper-card-body">
-          <h3>When Smaller Is Slower: Dimensional Collapse in Compressed LLMs</h3>
-          <p class="paper-meta">EuroMLSys 2026 &middot; ARK-generated</p>
-          <a href="assets/papers/gac.pdf" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem;padding:.5rem 1rem">Read Paper</a>
-          <a href="https://github.com/sands-lab/GAC" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.85rem;padding:.5rem 1rem">View Code</a>
-        </div>
-      </div>
-      <div class="paper-card reveal stagger-2" data-tilt>
-        <a href="assets/papers/mma.pdf" target="_blank" rel="noopener" class="paper-card-img">
-          <img src="assets/paper-example.png" alt="MMA Paper">
-          <span class="paper-badge">Template: NeurIPS</span>
-        </a>
-        <div class="paper-card-body">
-          <h3>A Practical Guide to CPU Matrix Multiplication: From Naive to Efficient</h3>
-          <p class="paper-meta">NeurIPS 2025 &middot; 14 iterations &middot; human-steered</p>
-          <a href="assets/papers/mma.pdf" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:.85rem;padding:.5rem 1rem">Read Paper</a>
-          <a href="https://github.com/JihaoXin/mma" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.85rem;padding:.5rem 1rem">View Code</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ===== Venues ===== -->
-<section class="venues" id="venues">
-  <div class="container" style="text-align:center;margin-bottom:1.5rem">
-    <p class="section-label reveal">Venue Intelligence</p>
-    <h2 class="section-title reveal">Supported Venues</h2>
-  </div>
-  <div class="venues-scroll">
-    <div class="venues-track" id="venuesTrack1">
-      <span class="venue-badge">NeurIPS</span>
-      <span class="venue-badge">ICML</span>
-      <span class="venue-badge">ICLR</span>
-      <span class="venue-badge">AAAI</span>
-      <span class="venue-badge">ACL</span>
-      <span class="venue-badge">IEEE</span>
-      <span class="venue-badge">ACM SIGPLAN</span>
-      <span class="venue-badge">LNCS</span>
-      <span class="venue-badge">USENIX</span>
-      <span class="venue-badge">CVPR</span>
-      <span class="venue-badge">ECCV</span>
-      <!-- duplicated for seamless loop -->
-      <span class="venue-badge">NeurIPS</span>
-      <span class="venue-badge">ICML</span>
-      <span class="venue-badge">ICLR</span>
-      <span class="venue-badge">AAAI</span>
-      <span class="venue-badge">ACL</span>
-      <span class="venue-badge">IEEE</span>
-      <span class="venue-badge">ACM SIGPLAN</span>
-      <span class="venue-badge">LNCS</span>
-      <span class="venue-badge">USENIX</span>
-      <span class="venue-badge">CVPR</span>
-      <span class="venue-badge">ECCV</span>
-    </div>
-    <div class="venues-track-reverse" id="venuesTrack2">
-      <span class="venue-badge">ECCV</span>
-      <span class="venue-badge">CVPR</span>
-      <span class="venue-badge">USENIX</span>
-      <span class="venue-badge">LNCS</span>
-      <span class="venue-badge">ACM SIGPLAN</span>
-      <span class="venue-badge">IEEE</span>
-      <span class="venue-badge">ACL</span>
-      <span class="venue-badge">AAAI</span>
-      <span class="venue-badge">ICLR</span>
-      <span class="venue-badge">ICML</span>
-      <span class="venue-badge">NeurIPS</span>
-      <!-- duplicated for seamless loop -->
-      <span class="venue-badge">ECCV</span>
-      <span class="venue-badge">CVPR</span>
-      <span class="venue-badge">USENIX</span>
-      <span class="venue-badge">LNCS</span>
-      <span class="venue-badge">ACM SIGPLAN</span>
-      <span class="venue-badge">IEEE</span>
-      <span class="venue-badge">ACL</span>
-      <span class="venue-badge">AAAI</span>
-      <span class="venue-badge">ICLR</span>
-      <span class="venue-badge">ICML</span>
-      <span class="venue-badge">NeurIPS</span>
     </div>
   </div>
 </section>
