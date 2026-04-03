@@ -855,6 +855,52 @@ a.paper-card-img, .paper-card-img {
 }
 .pillar-card h3 { font-size: 1.2rem; margin-bottom: .5rem; }
 
+/* ===== What is ARK intro ===== */
+#intro { background: linear-gradient(180deg, transparent, rgba(13, 148, 136, .03), transparent); }
+.ark-intro {
+  max-width: 700px; margin: 0 auto; text-align: center;
+}
+.ark-intro-text {
+  font-size: 1.15rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 2rem;
+}
+.intro-stats {
+  display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;
+}
+.intro-stat {
+  padding: .4rem 1.1rem;
+  background: rgba(13, 148, 136, .08);
+  border: 1px solid rgba(13, 148, 136, .2);
+  border-radius: 999px; font-size: .875rem; font-weight: 600; color: var(--teal);
+}
+.intro-stat-sep { color: var(--border); font-size: 1.2rem; }
+
+/* ===== Comparison split ===== */
+.comparison-split {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  border: 1px solid var(--border); border-radius: var(--radius-lg);
+  overflow: hidden; margin-bottom: 3rem;
+}
+.comparison-col { padding: 2rem 2.5rem; }
+.comparison-col--other {
+  background: rgba(241, 245, 249, .5);
+  border-right: 1px solid var(--border);
+}
+.comparison-col--ark { background: rgba(13, 148, 136, .04); }
+.comparison-col-header {
+  font-size: .75rem; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 1.25rem;
+}
+.comparison-col--other .comparison-col-header { color: var(--text-muted); }
+.comparison-col--ark .comparison-col-header { color: var(--teal); }
+.comparison-col ul { display: flex; flex-direction: column; gap: .9rem; }
+.comparison-col li { font-size: .95rem; display: flex; align-items: flex-start; gap: .5rem; }
+.comparison-col--other li { color: var(--text-muted); }
+.comparison-col--ark li { color: var(--text-primary); }
+
+.contribution-cards {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+}
+
 /* ===== Footer ===== */
 .footer {
   border-top: none; padding: 2.5rem 0;
@@ -922,6 +968,9 @@ a.paper-card-img, .paper-card-img {
   .harness-pillars { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
+  .comparison-split { grid-template-columns: 1fr; }
+  .comparison-col--other { border-right: none; border-bottom: 1px solid var(--border); }
+  .contribution-cards { grid-template-columns: 1fr; }
   .hero .container { grid-template-columns: 1fr; text-align: center; }
   .hero-content { align-items: center; }
   .hero-cta { align-items: center; }
@@ -957,6 +1006,7 @@ a.paper-card-img, .paper-card-img {
   .agents-grid { grid-template-columns: 1fr; }
   .harness-problems { grid-template-columns: 1fr; }
   .harness-pillars { grid-template-columns: 1fr; }
+  .contribution-cards { grid-template-columns: 1fr; }
   section { padding: 3rem 0; }
   .stat-number { font-size: 2rem; }
 }
