@@ -111,7 +111,7 @@ section { padding: 5rem 0; }
 
 /* ===== Hero ===== */
 .hero {
-  min-height: auto; display: flex; align-items: center;
+  min-height: 70vh; display: flex; align-items: center;
   position: relative; overflow: hidden;
   padding-top: 5rem; padding-bottom: 3rem;
 }
