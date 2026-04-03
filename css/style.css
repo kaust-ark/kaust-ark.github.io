@@ -517,20 +517,19 @@ section { padding: 5rem 0; }
 /* Inline loop steps */
 .loop-steps-inline {
   display: flex; align-items: center; justify-content: center;
-  flex-wrap: nowrap; gap: .5rem;
+  flex-wrap: nowrap; gap: .4rem;
   padding: 1.5rem 0 .5rem;
-  overflow-x: auto;
 }
 .loop-inline-step {
-  display: inline-flex; align-items: center; gap: .45rem;
-  padding: .6rem 1.4rem;
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .55rem 1.1rem;
   background: var(--card); border: 1px solid var(--border);
-  border-radius: 999px; font-size: 1rem; font-weight: 600;
-  color: var(--text-primary); white-space: nowrap;
+  border-radius: 999px; font-size: .95rem; font-weight: 600;
+  color: var(--text-primary); white-space: nowrap; flex-shrink: 0;
   box-shadow: 0 1px 4px rgba(0,0,0,.06);
 }
-.loop-step-icon { font-size: 1.1rem; line-height: 1; }
-.loop-inline-arr { color: var(--border); font-size: 1.1rem; flex-shrink: 0; }
+.loop-step-icon { font-size: 1rem; line-height: 1; }
+.loop-inline-arr { color: var(--border); font-size: 1rem; flex-shrink: 0; }
 .loop-inline-arr.loop-repeat { color: var(--teal); opacity: .7; font-size: 1.4rem; }
 
 /* ===== Agents ===== */
@@ -659,7 +658,7 @@ a.paper-card-img, .paper-card-img {
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
 .venues-track {
-  display: flex; gap: 1rem;
+  display: flex;
   animation: scrollVenues 35s linear infinite;
   width: max-content;
 }
@@ -674,14 +673,14 @@ a.paper-card-img, .paper-card-img {
 .venue-badge {
   padding: .5rem 1.2rem; background: var(--card); border: 1px solid var(--border);
   border-radius: 999px; font-size: .85rem; font-weight: 600; color: var(--text-primary);
-  white-space: nowrap; flex-shrink: 0;
+  white-space: nowrap; flex-shrink: 0; margin-right: 1rem;
   transition: border-color .2s, transform .2s;
 }
 .venue-badge:hover { border-color: var(--teal); transform: scale(1.05); }
 
 @keyframes scrollVenues {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-33.333%); }
 }
 @keyframes scrollVenuesReverse {
   0% { transform: translateX(-50%); }
