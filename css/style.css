@@ -923,7 +923,7 @@ a.paper-card-img, .paper-card-img {
 }
 
 /* ===== What is ARK intro ===== */
-#intro { background: linear-gradient(180deg, transparent, rgba(13, 148, 136, .03), transparent); padding: 3.5rem 0 2rem; }
+#intro { background: linear-gradient(180deg, transparent, rgba(13, 148, 136, .03), transparent); padding: 2.5rem 0 3rem; }
 #compare { padding-top: 3.5rem; }
 .ark-intro {
   max-width: 700px; margin: 0 auto; text-align: center;
