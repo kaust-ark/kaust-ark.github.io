@@ -111,9 +111,9 @@ section { padding: 5rem 0; }
 
 /* ===== Hero ===== */
 .hero {
-  min-height: 70vh; display: flex; align-items: center;
+  min-height: auto; display: flex; align-items: center;
   position: relative; overflow: hidden;
-  padding-top: 5rem; padding-bottom: 1rem;
+  padding-top: 5rem; padding-bottom: 3rem;
 }
 
 /* Animated gradient mesh background */
@@ -923,7 +923,8 @@ a.paper-card-img, .paper-card-img {
 }
 
 /* ===== What is ARK intro ===== */
-#intro { background: linear-gradient(180deg, transparent, rgba(13, 148, 136, .03), transparent); padding-top: 1rem; }
+#intro { background: linear-gradient(180deg, transparent, rgba(13, 148, 136, .03), transparent); padding: 2rem 0; }
+#compare { padding-top: 2rem; }
 .ark-intro {
   max-width: 700px; margin: 0 auto; text-align: center;
 }
