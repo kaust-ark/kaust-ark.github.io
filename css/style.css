@@ -855,6 +855,57 @@ a.paper-card-img, .paper-card-img {
 }
 .pillar-card h3 { font-size: 1.2rem; margin-bottom: .5rem; }
 
+/* ===== Hero Flow Diagram ===== */
+.hero-flow {
+  display: flex; align-items: center; justify-content: center;
+  flex-wrap: wrap; gap: .35rem;
+  opacity: 0; animation: heroFadeUp .8s ease forwards;
+  animation-delay: .85s;
+}
+.flow-step {
+  padding: .28rem .75rem;
+  background: rgba(255,255,255,.55);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: .78rem; font-weight: 500; color: var(--text-muted);
+  white-space: nowrap;
+  backdrop-filter: blur(4px);
+}
+.flow-arr { color: var(--border); font-size: .85rem; flex-shrink: 0; }
+.flow-submit {
+  color: var(--teal) !important;
+  border-color: rgba(13,148,136,.35) !important;
+  background: rgba(13,148,136,.08) !important;
+  font-weight: 600 !important;
+}
+.flow-loop-group {
+  display: flex; flex-direction: column; align-items: stretch;
+}
+.flow-loop-steps {
+  display: flex; align-items: center; gap: .35rem;
+  padding: .28rem .6rem;
+  border: 1px dashed rgba(13,148,136,.35);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+.loop-step {
+  background: rgba(13,148,136,.07) !important;
+  border-color: rgba(13,148,136,.2) !important;
+}
+.flow-loop-return {
+  display: flex; align-items: center; gap: .3rem;
+  border: 1px dashed rgba(13,148,136,.35);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: .18rem .6rem;
+}
+.loop-return-arrow { color: var(--teal); font-size: .85rem; opacity: .7; }
+.loop-return-line { flex: 1; height: 1px; background: rgba(13,148,136,.25); }
+.loop-return-label {
+  font-size: .65rem; color: var(--teal); opacity: .65;
+  font-weight: 500; white-space: nowrap;
+}
+
 /* ===== What is ARK intro ===== */
 #intro { background: linear-gradient(180deg, transparent, rgba(13, 148, 136, .03), transparent); }
 .ark-intro {
@@ -948,7 +999,7 @@ a.paper-card-img, .paper-card-img {
   .hero-particles .particle { display: none; }
   .venues-track, .venues-track-reverse { animation: none; }
   .scroll-progress { transition: none; }
-  .hero-logo, .hero h1, .hero-accent, .hero-tagline, .hero-cta, .hero-terminal-wrap {
+  .hero-logo, .hero h1, .hero-accent, .hero-tagline, .hero-cta, .hero-terminal-wrap, .hero-flow {
     opacity: 1; animation: none;
   }
   .hero-terminal { animation: none; }
