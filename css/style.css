@@ -188,8 +188,8 @@ section { padding: 5rem 0; }
   100% { opacity: 0; transform: translateY(-20vh) scale(0); }
 }
 
-.hero .container { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-.hero-content { display: flex; flex-direction: column; gap: 1.5rem; }
+.hero .container { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.hero-content { display: flex; flex-direction: column; gap: 1.5rem; align-items: center; }
 
 /* Staggered entrance */
 .hero-brand {
@@ -220,11 +220,11 @@ section { padding: 5rem 0; }
   animation-delay: .65s;
 }
 .hero-cta {
-  display: flex; flex-direction: column; gap: .75rem;
+  display: flex; flex-direction: column; gap: .75rem; align-items: center;
   opacity: 0; animation: heroFadeUp .8s ease forwards;
   animation-delay: .7s;
 }
-.hero-cta-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+.hero-cta-row { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
 .hero-terminal-wrap {
   opacity: 0; animation: heroFadeUp .8s ease forwards;
   animation-delay: .9s;
