@@ -517,8 +517,9 @@ section { padding: 5rem 0; }
 /* Inline loop steps */
 .loop-steps-inline {
   display: flex; align-items: center; justify-content: center;
-  flex-wrap: wrap; gap: .5rem;
+  flex-wrap: nowrap; gap: .5rem;
   padding: 1.5rem 0 .5rem;
+  overflow-x: auto;
 }
 .loop-inline-step {
   display: inline-flex; align-items: center; gap: .45rem;
