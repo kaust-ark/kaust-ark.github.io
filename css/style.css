@@ -111,7 +111,7 @@ section { padding: 5rem 0; }
 
 /* ===== Hero ===== */
 .hero {
-  min-height: 100vh; display: flex; align-items: center;
+  min-height: 85vh; display: flex; align-items: center;
   position: relative; overflow: hidden;
   padding-top: 5rem;
 }
@@ -858,20 +858,20 @@ a.paper-card-img, .paper-card-img {
 /* ===== Hero Flow Diagram ===== */
 .hero-flow {
   display: flex; align-items: center; justify-content: center;
-  flex-wrap: wrap; gap: .35rem;
+  flex-wrap: wrap; gap: .45rem;
   opacity: 0; animation: heroFadeUp .8s ease forwards;
   animation-delay: .85s;
 }
 .flow-step {
-  padding: .28rem .75rem;
+  padding: .35rem .9rem;
   background: rgba(255,255,255,.55);
   border: 1px solid var(--border);
   border-radius: 999px;
-  font-size: .78rem; font-weight: 500; color: var(--text-muted);
+  font-size: .9rem; font-weight: 500; color: var(--text-muted);
   white-space: nowrap;
   backdrop-filter: blur(4px);
 }
-.flow-arr { color: var(--border); font-size: .85rem; flex-shrink: 0; }
+.flow-arr { color: var(--border); font-size: .9rem; flex-shrink: 0; }
 .flow-submit {
   color: var(--teal) !important;
   border-color: rgba(13,148,136,.35) !important;
@@ -880,30 +880,27 @@ a.paper-card-img, .paper-card-img {
 }
 .flow-loop-group {
   display: flex; flex-direction: column; align-items: stretch;
+  border: 1px dashed rgba(13,148,136,.35);
+  border-radius: 8px; overflow: hidden;
+}
+.flow-loop-top {
+  display: flex; align-items: center; gap: .4rem;
+  background: rgba(13,148,136,.06);
+  padding: .2rem .6rem;
+  border-bottom: 1px dashed rgba(13,148,136,.25);
+}
+.loop-top-line { flex: 1; height: 1px; background: rgba(13,148,136,.3); }
+.loop-top-label {
+  font-size: .7rem; color: var(--teal); font-weight: 600;
+  white-space: nowrap; opacity: .85;
 }
 .flow-loop-steps {
-  display: flex; align-items: center; gap: .35rem;
-  padding: .28rem .6rem;
-  border: 1px dashed rgba(13,148,136,.35);
-  border-bottom: none;
-  border-radius: 8px 8px 0 0;
+  display: flex; align-items: center; gap: .45rem;
+  padding: .35rem .6rem;
 }
 .loop-step {
   background: rgba(13,148,136,.07) !important;
   border-color: rgba(13,148,136,.2) !important;
-}
-.flow-loop-return {
-  display: flex; align-items: center; gap: .3rem;
-  border: 1px dashed rgba(13,148,136,.35);
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  padding: .18rem .6rem;
-}
-.loop-return-arrow { color: var(--teal); font-size: .85rem; opacity: .7; }
-.loop-return-line { flex: 1; height: 1px; background: rgba(13,148,136,.25); }
-.loop-return-label {
-  font-size: .65rem; color: var(--teal); opacity: .65;
-  font-weight: 500; white-space: nowrap;
 }
 
 /* ===== What is ARK intro ===== */
