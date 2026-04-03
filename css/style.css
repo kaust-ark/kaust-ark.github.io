@@ -198,7 +198,7 @@ section { padding: 5rem 0; }
   animation-delay: .1s;
 }
 .hero-logo {
-  width: 72px; height: auto;
+  width: 120px; height: auto;
 }
 .hero-brand-name {
   font-size: 2.4rem; font-weight: 700; color: var(--text-primary);
@@ -517,17 +517,20 @@ section { padding: 5rem 0; }
 /* Inline loop steps */
 .loop-steps-inline {
   display: flex; align-items: center; justify-content: center;
-  flex-wrap: wrap; gap: .4rem;
-  padding: 1rem 0 .5rem;
+  flex-wrap: wrap; gap: .5rem;
+  padding: 1.5rem 0 .5rem;
 }
 .loop-inline-step {
-  padding: .35rem .9rem;
+  display: inline-flex; align-items: center; gap: .45rem;
+  padding: .6rem 1.4rem;
   background: var(--card); border: 1px solid var(--border);
-  border-radius: 999px; font-size: .9rem; font-weight: 600;
+  border-radius: 999px; font-size: 1rem; font-weight: 600;
   color: var(--text-primary); white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
 }
-.loop-inline-arr { color: var(--border); font-size: .9rem; flex-shrink: 0; }
-.loop-inline-arr.loop-repeat { color: var(--teal); opacity: .6; font-size: 1.1rem; }
+.loop-step-icon { font-size: 1.1rem; line-height: 1; }
+.loop-inline-arr { color: var(--border); font-size: 1.1rem; flex-shrink: 0; }
+.loop-inline-arr.loop-repeat { color: var(--teal); opacity: .7; font-size: 1.4rem; }
 
 /* ===== Agents ===== */
 .agents-grid {
@@ -650,6 +653,7 @@ a.paper-card-img, .paper-card-img {
 .venues { padding: 3rem 0; overflow: hidden; }
 .venues-scroll {
   position: relative;
+  overflow: hidden;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
