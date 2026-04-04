@@ -90,43 +90,20 @@
       <div class="comparison-col comparison-col--other">
         <div class="comparison-col-header">其他工具</div>
         <ul>
-          <li>&#10060; 黑箱执行</li>
-          <li>&#10060; 偏离用户意图</li>
-          <li>&#10060; 一旦启动无法干预</li>
-          <li>&#10060; LLM 自写引用，容易产生幻觉</li>
+          <li><strong>&#10060; 自动化漂移</strong><br>全自动流水线无人监督运行，逐渐偏离研究者的意图，运行中途无法纠偏。</li>
+          <li><strong>&#10060; 排版混乱</strong><br>AI 生成的论文布局不一致、图表错位、LaTeX 频繁报错，需要大量人工修复。</li>
+          <li><strong>&#10060; 引用幻觉</strong><br>大语言模型编造看似合理但实际不存在的参考文献，损害论文可信度。</li>
+          <li><strong>&#10060; 图片质量低</strong><br>自动生成的图表使用默认样式，尺寸不当、标签重叠，完全无视栏宽和页面约束。</li>
         </ul>
       </div>
       <div class="comparison-col comparison-col--ark">
         <div class="comparison-col-header">ARK</div>
         <ul>
-          <li>&#9989; 实时可观测</li>
-          <li>&#9989; 关键节点暂停，主动确认后再继续</li>
-          <li>&#9989; 随时通过网页或 Telegram 干预</li>
-          <li>&#9989; 零幻觉引用，全部来自学术 API</li>
+          <li><strong>&#9989; 人机协同</strong><br>ARK 在关键决策点暂停，通过 Telegram 或网页让你随时介入——需要自动化时全自动，需要把关时随时干预。</li>
+          <li><strong>&#9989; 出版级排版</strong><br>硬编码 LaTeX 编译配合会议专属模板（NeurIPS、ACL、IEEE……），从一开始就保证格式正确。</li>
+          <li><strong>&#9989; 引用验证</strong><br>每条引用均通过 DBLP API 逐一验证，确保所有参考文献真实存在后才写入稿件。</li>
+          <li><strong>&#9989; 精准控图</strong><br>基于 Paper Banana，适配会议画布尺寸、精确栏宽与字号匹配——零猜测，零返工。</li>
         </ul>
-      </div>
-    </div>
-
-    <div class="contribution-cards">
-      <div class="pillar-card reveal stagger-1">
-        <div class="pillar-icon">&#128270;</div>
-        <h3>实时可观测</h3>
-        <p>每个 Agent 的动作、审稿评分与决策全部实时记录。你随时掌握运行状态，绝不是黑箱。</p>
-      </div>
-      <div class="pillar-card reveal stagger-2">
-        <div class="pillar-icon">&#128276;</div>
-        <h3>关键节点提醒</h3>
-        <p>分数停滞、实验分支变化较大、计划存在歧义时，ARK 会暂停并主动确认，不会擅自做决定。</p>
-      </div>
-      <div class="pillar-card reveal stagger-3">
-        <div class="pillar-icon">&#9784;</div>
-        <h3>随时干预</h3>
-        <p>通过 Telegram 或网页随时发送指令，ARK 在下一轮迭代自动吸收新方向，无需重启流程。</p>
-      </div>
-      <div class="pillar-card reveal stagger-4">
-        <div class="pillar-icon">&#9989;</div>
-        <h3>零幻觉引用</h3>
-        <p>所有参考文献均来自 DBLP、CrossRef、arXiv、Semantic Scholar 官方 API &mdash; LLM 永远不会自己编写 BibTeX。每轮迭代双源交叉验证。</p>
       </div>
     </div>
   </div>

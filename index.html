@@ -90,43 +90,20 @@
       <div class="comparison-col comparison-col--other">
         <div class="comparison-col-header">Other Tools</div>
         <ul>
-          <li>&#10060; Black box execution</li>
-          <li>&#10060; Drifting from user&rsquo;s intent</li>
-          <li>&#10060; Locked in once started</li>
-          <li>&#10060; LLM-generated citations prone to hallucination</li>
+          <li><strong>&#10060; Autonomous Drift</strong><br>Fully automated pipelines run unsupervised and gradually deviate from the researcher&rsquo;s intent &mdash; no way to course-correct mid-run.</li>
+          <li><strong>&#10060; Broken Formatting</strong><br>AI-generated papers produce inconsistent layouts, misaligned figures, and broken LaTeX that require extensive manual cleanup.</li>
+          <li><strong>&#10060; Hallucinated Citations</strong><br>LLMs fabricate references that look plausible but point to papers that don&rsquo;t exist, undermining credibility.</li>
+          <li><strong>&#10060; Low-Quality Figures</strong><br>Auto-generated plots use default styles with poor sizing, overlapping labels, and no awareness of column or page constraints.</li>
         </ul>
       </div>
       <div class="comparison-col comparison-col--ark">
         <div class="comparison-col-header">ARK</div>
         <ul>
-          <li>&#9989; Live observability</li>
-          <li>&#9989; Pauses at critical forks, asks before acting</li>
-          <li>&#9989; User intervention via web or Telegram</li>
-          <li>&#9989; Hallucination-free citations via academic APIs</li>
+          <li><strong>&#9989; Human-in-the-Loop</strong><br>ARK pauses at critical decision points and lets you steer via Telegram or the web portal &mdash; full automation when you want it, oversight when you need it.</li>
+          <li><strong>&#9989; Publication-Ready Layout</strong><br>Hard-coded LaTeX compilation with venue-specific templates (NeurIPS, ACL, IEEE&hellip;) guarantees correct formatting out of the box.</li>
+          <li><strong>&#9989; Verified References</strong><br>Every citation is validated against the DBLP API, ensuring all referenced papers actually exist before they enter the manuscript.</li>
+          <li><strong>&#9989; Precision-Controlled Figures</strong><br>Powered by Paper Banana with venue-aware canvas dimensions, exact column widths, and matched font sizing &mdash; no guesswork.</li>
         </ul>
-      </div>
-    </div>
-
-    <div class="contribution-cards">
-      <div class="pillar-card reveal stagger-1">
-        <div class="pillar-icon">&#128270;</div>
-        <h3>Live observability</h3>
-        <p>Every agent action, reviewer score, and decision is logged in real time. You always know where the run stands &mdash; never a black box.</p>
-      </div>
-      <div class="pillar-card reveal stagger-2">
-        <div class="pillar-icon">&#128276;</div>
-        <h3>Decision Alerts</h3>
-        <p>At critical forks &mdash; a stalled score, a major experiment branch, an ambiguous plan &mdash; ARK pauses and asks before proceeding. No silent decisions.</p>
-      </div>
-      <div class="pillar-card reveal stagger-3">
-        <div class="pillar-icon">&#9784;</div>
-        <h3>Anytime Intervention</h3>
-        <p>Send a new instruction at any point via Telegram or the web portal. ARK incorporates your direction into the next iteration without restarting.</p>
-      </div>
-      <div class="pillar-card reveal stagger-4">
-        <div class="pillar-icon">&#9989;</div>
-        <h3>Hallucination-Free Citations</h3>
-        <p>Every reference comes from DBLP, CrossRef, arXiv, or Semantic Scholar APIs &mdash; the LLM never writes BibTeX. Dual-source verification each iteration.</p>
       </div>
     </div>
   </div>

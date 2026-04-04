@@ -960,8 +960,8 @@ a.paper-card-img, .paper-card-img {
 }
 .comparison-col--other .comparison-col-header { color: var(--text-muted); }
 .comparison-col--ark .comparison-col-header { color: var(--teal); }
-.comparison-col ul { display: flex; flex-direction: column; gap: .9rem; }
-.comparison-col li { font-size: .95rem; display: flex; align-items: flex-start; gap: .5rem; }
+.comparison-col ul { display: flex; flex-direction: column; gap: 1.25rem; }
+.comparison-col li { font-size: .95rem; line-height: 1.55; }
 .comparison-col--other li { color: var(--text-muted); }
 .comparison-col--ark li { color: var(--text-primary); }
 
