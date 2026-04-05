@@ -1054,7 +1054,7 @@ a.paper-card-img, .paper-card-img {
 .wave-divider svg {
   display: block; width: 100%; height: 48px;
 }
-.wave-divider svg path { fill: rgba(203, 213, 225, .15); }
+.wave-divider svg path { fill: rgba(203, 213, 225, .06); }
 .wave-divider--flip { transform: scaleY(-1); margin-top: 0; margin-bottom: -1px; }
 
 /* ===== Footer ===== */
