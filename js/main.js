@@ -14,6 +14,25 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
 
+/* ===== Hero Parallax ===== */
+(function() {
+  const hero = document.getElementById('hero');
+  const heroContainer = hero ? hero.querySelector('.container') : null;
+  const heroBg = hero ? hero.querySelector('.hero-bg') : null;
+  if (!hero || !heroContainer) return;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) return;
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const heroH = hero.offsetHeight;
+    if (scrollY > heroH) return;
+    heroContainer.style.transform = `translateY(${scrollY * 0.3}px)`;
+    heroContainer.style.opacity = 1 - scrollY / heroH * 0.6;
+    if (heroBg) heroBg.style.transform = `translateY(${scrollY * 0.15}px)`;
+  }, { passive: true });
+})();
+
 /* ===== Back to Top Button ===== */
 const backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', () => {
@@ -315,3 +334,15 @@ function animateRoadmap() {
   items.forEach(item => itemObserver.observe(item));
 }
 animateRoadmap();
+
+/* ===== Comparison Slide-in ===== */
+const compSplit = document.querySelector('.comparison-split');
+if (compSplit) {
+  const compObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {
+      compSplit.classList.add('visible');
+      compObserver.disconnect();
+    }
+  }, { threshold: 0.15 });
+  compObserver.observe(compSplit);
+}
